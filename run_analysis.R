@@ -53,8 +53,8 @@ names(subjects) <- "subject"
 trainActivity   <- read.table(file.path("train", "y_train.txt"))
 testActivity    <- read.table(file.path("test",  "y_test.txt"))
 activities      <- rbind(trainActivity, testActivity)
-names(activities) <- "activityID"
 rm(trainActivity, testActivity)
+names(activities) <- "activityID"
 
 # column merge the subjects to activities and to measurements
 dataset <- cbind(subjects, activities, measures)

@@ -1,7 +1,7 @@
-Getting-and-Cleaning-Data
+Getting and Cleaning Data
 =========================
 
-Getting and Cleaning Data Course Project (Coursera)
+Course Project (Coursera)
 
 Description
 -----------
@@ -16,7 +16,7 @@ Here are the data for the project:
 
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-The R script called run_analysis.R does the following. 
+The R script called *run_analysis.R* does the following. 
 
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -28,10 +28,10 @@ The R script called run_analysis.R does the following.
 What you find in this repository
 --------------------------------
 
-* CodeBook.md: information about raw and tidy data set 
-* README.md: this file
-* run_analysis.R: R script to transform raw data set in a tidy one
-* tidy.txt: a tidy data set obtained following the instructions in the description of the course project. To load and check the data, you can use the read.table as described below:
+* *CodeBook.md*: information about raw and tidy data set 
+* *README.md*: this file
+* *run_analysis.R*: R script to transform raw data set in a tidy one
+* *tidy.txt*: a tidy data set obtained following the instructions in the description of the course project. To load and check the data, you can use the read.table as described below:
 ```
     averages <- read.table("tidy.txt", header=TRUE)
 ```
@@ -40,13 +40,13 @@ How to
 ------
 
 * clone this repository
-* download compressed raw data
+* download compressed raw data using the link above
 * unzip raw data and copy the directory 'UCI HAR Dataset' to the cloned repository root directory
-* open a R console and set the working directory to the repository root
+* open a R console and set the working directory to the 'UCI HAR Dataset'
 ```
-    setwd("{...}")
+    setwd("{...}UCI HAR Dataset")
 ```
-* run run_analysis.R script 
+* run *run_analysis.R* script 
 ```
     source("run_analysis.R")
 ```
